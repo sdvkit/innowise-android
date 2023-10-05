@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/screenFragment1"
+        android:title="@string/screen_1"
+        android:icon="@drawable/list" />
+
+    <item
+        android:id="@+id/screenFragment2"
+        android:title="@string/screen_2"
+        android:icon="@drawable/card_item" />
+
+    <item
+        android:id="@+id/screenFragment3"
+        android:title="@string/screen_3"
+        android:icon="@drawable/medical_card" />
+
+    <item
+        android:id="@+id/screenFragment4"
+        android:title="@string/screen_4"
+        android:icon="@drawable/grid" />
+
+    <item
+        android:id="@+id/screenFragment5"
+        android:title="@string/screen_5"
+        android:icon="@drawable/refresh" />
+
+</menu>

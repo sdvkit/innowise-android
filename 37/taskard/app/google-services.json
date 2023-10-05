@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "693254115888",
+    "firebase_url": "https://taskard-project-default-rtdb.firebaseio.com",
+    "project_id": "taskard-project",
+    "storage_bucket": "taskard-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:693254115888:android:c3a2684e8987cf17f753f5",
+        "android_client_info": {
+          "package_name": "com.sdv.kit.taskard"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtEsyffzhXOLyx_SrImcKm5mPPU4aMcHk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

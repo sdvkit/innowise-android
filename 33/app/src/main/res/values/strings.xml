@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Application</string>
+    <string name="start_race">Start race</string>
+    <string name="add_new_bike">Add new bike</string>
+    <string name="speed_in_km">Speed (in km.)</string>
+    <string name="tire_puncture_in">Tire puncture (in %)</string>
+    <string name="has_sidecar">Has sidecar</string>
+    <string name="save">Save</string>
+    <string name="add_new_truck">Add new truck</string>
+    <string name="cargo_weight_in_kg">Cargo weight (in kg.)</string>
+    <string name="add_new_passenger_car">Add new passenger car</string>
+    <string name="number_of_passengers">Number of passengers</string>
+    <string name="race_settings">Race settings</string>
+    <string name="lap_size_in_km">Lap size (in km.)</string>
+    <string name="repair_time_in_ms">Repair time (in ms.)</string>
+    <string name="race_status">Race status</string>
+    <string name="not_running">Not running</string>
+    <string name="results">Results:</string>
+    <string name="run_this_race_again">Run this race again</string>
+</resources>

@@ -1,0 +1,6 @@
+https://material.io/design/layout/understanding-layout.html#principles
+https://material.io/design/navigation/understanding-navigation.html
+https://material.io/design/color/the-color-system.html#color-usage-and-palettes
+https://material.io/design/typography/the-type-system.html#applying-the-type-scale
+https://material.io/design/iconography/product-icons.html#design-principles
+https://material.io/components?platform=android

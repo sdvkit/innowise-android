@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Application</string>
+    <string name="actor_example_label">Model winner of 2018 Tokyo Art costume design week\n</string>
+    <string name="actor_name_example_label">Isabella Zhang</string>
+    <string name="time_label">6 days ago</string>
+    <string name="follow_label">Follow</string>
+    <string name="recommended_by_label">Recommended by :</string>
+    <string name="avatars_count_label">+36</string>
+    <string name="users_count_label">18 / 56 users</string>
+    <string name="follow_button_label">+Follow</string>
+    <string name="views_count_example">2.615</string>
+    <string name="comments_count_example">368</string>
+</resources>

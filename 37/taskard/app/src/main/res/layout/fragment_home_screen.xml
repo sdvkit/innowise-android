@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbarLayout"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:background="@color/white"
+            app:contentScrim="@color/primary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            app:toolbarId="@+id/toolbar">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/projects"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:fontFamily="@font/ibm_plex_sans_medium"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="88dp" />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/projectsViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white"/>
+
+            <TextView
+                android:id="@+id/emptyProjectsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty_projects"
+                android:textSize="20sp"
+                android:fontFamily="@font/ibm_plex_sans_medium"
+                android:textColor="@color/grey"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                tools:visibility="visible"/>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="parallax">
+
+                <ImageView
+                    android:id="@+id/userAvatarImageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center|start"
+                    android:layout_marginStart="16dp"
+                    tools:src="@drawable/icon_profile"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/newProjectButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/icon_plus"
+                    android:backgroundTint="@color/primary"
+                    android:layout_marginEnd="16dp"
+                    android:layout_gravity="center|end"/>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tasksRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:background="@drawable/rounded_background"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/newTaskButton"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@drawable/icon_plus"
+        android:backgroundTint="@color/primary"
+        android:tint="@color/white"
+        app:layout_anchor="@id/appBar"
+        app:layout_anchorGravity="bottom|center"
+        android:importantForAccessibility="no" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

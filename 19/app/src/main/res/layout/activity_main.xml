@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/backgroundView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/green"
+        app:layout_constraintBottom_toTopOf="@+id/bottomLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/dark_green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/leftNestedGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/rightNestedGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="20dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/topNestedGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="210dp" />
+
+        <include
+            android:id="@+id/actorInfo"
+            layout="@layout/fragment_actor"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            app:layout_constraintEnd_toStartOf="@+id/rightNestedGuideline"
+            app:layout_constraintStart_toStartOf="@+id/leftNestedGuideline"
+            app:layout_constraintTop_toTopOf="@id/topNestedGuideline" />
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/dark_grey"
+            app:layout_constraintEnd_toStartOf="@id/rightNestedGuideline"
+            app:layout_constraintStart_toStartOf="@+id/leftNestedGuideline"
+            app:layout_constraintTop_toBottomOf="@id/actorInfo" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/bottomNestedGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="80dp" />
+
+        <TextView
+            android:id="@+id/recommendedByTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recommended_by_label"
+            android:textColor="@color/grey"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/leftNestedGuideline"
+            app:layout_constraintTop_toTopOf="@+id/bottomNestedGuideline" />
+
+        <TextView
+            android:id="@+id/recommendationsCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/users_count_label"
+            android:textColor="@color/grey"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/rightNestedGuideline"
+            app:layout_constraintTop_toTopOf="@+id/bottomNestedGuideline" />
+
+        <include
+            layout="@layout/fragment_avatar_group"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/rightNestedGuideline"
+            app:layout_constraintStart_toStartOf="@+id/leftNestedGuideline" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topHorizontalGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="60dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+
+    <TextView
+        android:id="@+id/profileHeader"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="220dp"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rightGuideline"
+        app:layout_constraintStart_toStartOf="@+id/leftGuideline"
+        android:text="@string/actor_example_label" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/back_button"
+        app:layout_constraintBottom_toTopOf="@+id/topHorizontalGuideline"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/more_button"
+        app:layout_constraintBottom_toTopOf="@+id/topHorizontalGuideline"
+        app:layout_constraintEnd_toStartOf="@+id/rightGuideline" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

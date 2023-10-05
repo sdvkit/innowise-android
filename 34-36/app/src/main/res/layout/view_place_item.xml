@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:padding="16dp"
+    android:background="@drawable/view_place_item_background"
+    android:layout_marginBottom="8dp">
+
+    <ImageView
+        android:id="@+id/placeIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/cross"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/placeIcon"
+        app:layout_constraintTop_toTopOf="parent"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/placeNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:textSize="22sp"
+            android:textColor="@color/primary_blue"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            tools:text="Red Square (Красная площадь)" />
+
+        <TextView
+            android:id="@+id/placeCategoryTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:textSize="22sp"
+            android:textColor="@color/primary_blue"
+            android:layout_weight="1"
+            tools:text="ТЦ охотный ряд" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

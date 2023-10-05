@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeScreenFragment">
+
+    <fragment
+        android:id="@+id/homeScreenFragment"
+        android:name="com.sdv.kit.taskard.screen.HomeScreenFragment"
+        android:label="HomeScreenFragment" >
+        <action
+            android:id="@+id/action_homeScreenFragment_to_taskInfoScreenFragment"
+            app:destination="@id/taskInfoScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileScreenFragment"
+        android:name="com.sdv.kit.taskard.screen.ProfileScreenFragment"
+        android:label="ProfileScreenFragment" />
+    <fragment
+        android:id="@+id/authScreenFragment"
+        android:name="com.sdv.kit.taskard.screen.AuthScreenFragment"
+        android:label="AuthScreenFragment" >
+        <action
+            android:id="@+id/action_authScreenFragment_to_mainScreenFragment"
+            app:destination="@id/mainScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainScreenFragment"
+        android:name="com.sdv.kit.taskard.screen.MainScreenFragment"
+        android:label="MainScreenFragment" />
+    <fragment
+        android:id="@+id/specialTasksScreenFragment"
+        android:name="com.sdv.kit.taskard.screen.SpecialTasksScreenFragment"
+        android:label="SpecialTasksScreenFragment" >
+        <action
+            android:id="@+id/action_specialTasksScreenFragment_to_taskInfoScreenFragment"
+            app:destination="@id/taskInfoScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/taskInfoScreenFragment"
+        android:name="com.sdv.kit.taskard.screen.TaskInfoScreenFragment"
+        android:label="TaskInfoScreenFragment" />
+</navigation>

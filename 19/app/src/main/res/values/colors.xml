@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="actor_name_white">#CDCDCD</color>
+    <color name="green">#224D24</color>
+    <color name="grey">#515151</color>
+    <color name="dark_grey">#1C1C1C</color>
+    <color name="blue">#2196F3</color>
+    <color name="red">#F44336</color>
+    <color name="dark_green">#01100b</color>
+    <color name="yellow">#FFC107</color>
+    <color name="orange">#FF5722</color>
+    <color name="purple">#673AB7</color>
+    <color name="mint">#009688</color>
+    <color name="dark_blue">#2B377A</color>
+    <color name="dark_purple">#31195C</color>
+</resources>

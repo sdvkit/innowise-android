@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Application</string>
+    <string name="screen_1">Screen 1</string>
+    <string name="screen_2">Screen 2</string>
+    <string name="screen_3">Screen 3</string>
+    <string name="screen_4">Screen 4</string>
+    <string name="screen_5">Screen 5</string>
+    <string name="element_1">Every (i % 4 == 1) element</string>
+    <string name="element_2">Every (i % 2 == 0) element</string>
+    <string name="element_3">Another element</string>
+    <string name="navigation_bar">Navigation Bar</string>
+    <string name="no_available_users">There are no users available right now</string>
+</resources>

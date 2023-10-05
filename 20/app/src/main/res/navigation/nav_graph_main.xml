@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph_main"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.sdv.kit.application.fragment.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_screenFragment1"
+            app:destination="@id/screenFragment1" />
+        <action
+            android:id="@+id/action_mainFragment_to_screenFragment2"
+            app:destination="@id/screenFragment2" />
+        <action
+            android:id="@+id/action_mainFragment_to_screenFragment3"
+            app:destination="@id/screenFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/screenFragment1"
+        android:name="com.sdv.kit.application.fragment.ScreenFragment1"
+        android:label="ScreenFragment1" />
+    <fragment
+        android:id="@+id/screenFragment2"
+        android:name="com.sdv.kit.application.fragment.ScreenFragment2"
+        android:label="ScreenFragment2" />
+    <fragment
+        android:id="@+id/screenFragment3"
+        android:name="com.sdv.kit.application.fragment.ScreenFragment3"
+        android:label="ScreenFragment3" />
+</navigation>

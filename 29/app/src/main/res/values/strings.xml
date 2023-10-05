@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Application</string>
+    <string name="tap">Tap</string>
+    <string name="cancel">Cancel</string>
+    <string name="update">Update</string>
+    <string name="zero_value">0</string>
+</resources>
